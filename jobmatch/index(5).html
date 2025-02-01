@@ -1,0 +1,483 @@
+<html lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Job Match - منصة التوظيف
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+   body {
+    font-family: 'Cairo', sans-serif;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <a class="text-2xl font-bold text-blue-600" href="#">
+     Job Match
+    </a>
+    <nav class="space-x-4">
+     <a class="text-gray-700 hover:text-blue-600" href="#">
+      الرئيسية
+     </a>
+     <a class="text-gray-700 hover:text-blue-600" href="#">
+      من نحن
+     </a>
+     <a class="text-gray-700 hover:text-blue-600" href="#">
+      الخدمات
+     </a>
+     <a class="text-gray-700 hover:text-blue-600" href="#">
+      الاتصال
+     </a>
+    </nav>
+    <div class="space-x-4">
+     <a class="bg-gray-600 text-white px-4 py-2 rounded" href="#">
+      تسجيل الدخول
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20">
+   <div class="container mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold mb-4">
+     خدمات مهنية موثوقة في متناول يديك
+    </h1>
+    <p class="text-lg mb-8">
+     اكتشف خدمات الحرفيين باستخدام منصتنا المدعومة بالذكاء الاصطناعي، احجزها، وناقش الأسعار في الوقت الفعلي!
+    </p>
+    <a class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold" href="#">
+     ابحث عن خدمات الآن
+    </a>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="py-16">
+   <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     أبرز المميزات
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <i class="fas fa-bolt text-blue-600 text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       خدمة فورية
+      </h3>
+      <p>
+       احصل على الخدمة التي تحتاجها بسرعة وكفاءة.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <i class="fas fa-handshake text-blue-600 text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       تفاوض على الأسعار
+      </h3>
+      <p>
+       ناقش الأسعار مع الحرفيين مباشرة.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <i class="fas fa-star text-blue-600 text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       تقييمات من العملاء
+      </h3>
+      <p>
+       اقرأ تقييمات العملاء السابقين قبل اتخاذ قرارك.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-md">
+      <i class="fas fa-robot text-blue-600 text-4xl mb-4">
+      </i>
+      <h3 class="text-xl font-semibold mb-2">
+       الذكاء الاصطناعي للمطابقة
+      </h3>
+      <p>
+       نظام المطابقة الذكي يضمن لك العثور على العامل الأنسب بسرعة وكفاءة.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Sign Up / Login Page -->
+  <section class="py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+     <h2 class="text-3xl font-bold mb-8 text-center">
+      تسجيل الدخول / إنشاء حساب
+     </h2>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Login Form -->
+      <div>
+       <h3 class="text-xl font-semibold mb-4">
+        تسجيل الدخول
+       </h3>
+       <form>
+        <div class="mb-4">
+         <label class="block text-gray-700 mb-2" for="email">
+          البريد الإلكتروني
+         </label>
+         <input class="w-full px-4 py-2 border rounded-lg" id="email" name="email" type="email"/>
+        </div>
+        <div class="mb-4">
+         <label class="block text-gray-700 mb-2" for="password">
+          كلمة المرور
+         </label>
+         <input class="w-full px-4 py-2 border rounded-lg" id="password" name="password" type="password"/>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="submit">
+         تسجيل الدخول
+        </button>
+        <div class="mt-4 text-center">
+         <p>
+          أو تسجيل الدخول عبر
+         </p>
+         <div class="flex justify-center space-x-4 mt-2">
+          <button class="bg-red-600 text-white px-4 py-2 rounded">
+           <i class="fab fa-google">
+           </i>
+          </button>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded">
+           <i class="fab fa-facebook-f">
+           </i>
+          </button>
+         </div>
+        </div>
+       </form>
+      </div>
+      <!-- Sign Up Form -->
+      <div>
+       <h3 class="text-xl font-semibold mb-4">
+        إنشاء حساب
+       </h3>
+       <form>
+        <div class="mb-4">
+         <label class="block text-gray-700 mb-2" for="signup-email">
+          البريد الإلكتروني
+         </label>
+         <input class="w-full px-4 py-2 border rounded-lg" id="signup-email" name="signup-email" type="email"/>
+        </div>
+        <div class="mb-4">
+         <label class="block text-gray-700 mb-2" for="signup-password">
+          كلمة المرور
+         </label>
+         <input class="w-full px-4 py-2 border rounded-lg" id="signup-password" name="signup-password" type="password"/>
+        </div>
+        <div class="mb-4">
+         <label class="block text-gray-700 mb-2" for="confirm-password">
+          إعادة كلمة المرور
+         </label>
+         <input class="w-full px-4 py-2 border rounded-lg" id="confirm-password" name="confirm-password" type="password"/>
+        </div>
+        <div class="mb-4">
+         <label class="block text-gray-700 mb-2">
+          نوع الحساب
+         </label>
+         <div class="flex space-x-4">
+          <label class="flex items-center">
+           <input class="mr-2" name="account-type" type="radio" value="worker"/>
+           أنا عامل
+          </label>
+          <label class="flex items-center">
+           <input class="mr-2" name="account-type" type="radio" value="client"/>
+           أنا عميل
+          </label>
+         </div>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="submit">
+         إنشاء حساب
+        </button>
+       </form>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Client Dashboard -->
+  <section class="py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+     <h2 class="text-3xl font-bold mb-8 text-center">
+      لوحة تحكم العميل
+     </h2>
+     <div class="mb-8">
+      <input class="w-full px-4 py-2 border rounded-lg" placeholder="ابحث عن العمال المتاحين..." type="text"/>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-4">
+        حلاقة
+       </h3>
+       <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="button">
+        طلب خدمة
+       </button>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-4">
+        كهربائي
+       </h3>
+       <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="button">
+        طلب خدمة
+       </button>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <h3 class="text-xl font-semibold mb-4">
+        سباك
+       </h3>
+       <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="button">
+        طلب خدمة
+       </button>
+      </div>
+     </div>
+     <div class="mt-8">
+      <h3 class="text-xl font-semibold mb-4">
+       الطلبات الحالية
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا توجد طلبات حالية.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Worker Dashboard -->
+  <section class="py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+     <h2 class="text-3xl font-bold mb-8 text-center">
+      لوحة تحكم العامل
+     </h2>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       إعدادات الملف الشخصي
+      </h3>
+      <form>
+       <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="services-offered">
+         الخدمات المقدمة
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="services-offered" name="services-offered" type="text"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="rates">
+         الأسعار
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="rates" name="rates" type="text"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="working-hours">
+         ساعات العمل
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="working-hours" name="working-hours" type="text"/>
+       </div>
+       <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="submit">
+        حفظ
+       </button>
+      </form>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       الطلبات الواردة
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا توجد طلبات واردة.
+       </p>
+      </div>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       الدردشة
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا توجد محادثات حالية.
+       </p>
+      </div>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       سجل الخدمات
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا يوجد سجل خدمات.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Search Page -->
+  <section class="py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+     <h2 class="text-3xl font-bold mb-8 text-center">
+      صفحة البحث
+     </h2>
+     <div class="mb-8">
+      <input class="w-full px-4 py-2 border rounded-lg" placeholder="ابحث عن العمال..." type="text"/>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       الفلاتر
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+       <div>
+        <label class="block text-gray-700 mb-2" for="location">
+         الموقع
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="location" name="location" type="text"/>
+       </div>
+       <div>
+        <label class="block text-gray-700 mb-2" for="service-type">
+         نوع الخدمة
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="service-type" name="service-type" type="text"/>
+       </div>
+       <div>
+        <label class="block text-gray-700 mb-2" for="price">
+         الأسعار
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="price" name="price" type="text"/>
+       </div>
+       <div>
+        <label class="block text-gray-700 mb-2" for="ratings">
+         التقييمات
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="ratings" name="ratings" type="text"/>
+       </div>
+      </div>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       النتائج
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا توجد نتائج.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Ratings and Reviews Page -->
+  <section class="py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+     <h2 class="text-3xl font-bold mb-8 text-center">
+      صفحة التقييمات والمراجعات
+     </h2>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       نموذج التقييم
+      </h3>
+      <form>
+       <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="worker-name">
+         اسم العامل
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="worker-name" name="worker-name" type="text"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="rating">
+         التقييم
+        </label>
+        <input class="w-full px-4 py-2 border rounded-lg" id="rating" name="rating" type="number" max="5" min="1"/>
+       </div>
+       <div class="mb-4">
+        <label class="block text-gray-700 mb-2" for="review">
+         المراجعة
+        </label>
+        <textarea class="w-full px-4 py-2 border rounded-lg" id="review" name="review">
+        </textarea>
+       </div>
+       <button class="bg-blue-600 text-white px-4 py-2 rounded w-full" type="submit">
+        إرسال
+       </button>
+      </form>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       تقييمات العامل
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا توجد تقييمات.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Support and Help Page -->
+  <section class="py-16 bg-gray-100">
+   <div class="container mx-auto px-4">
+    <div class="bg-white p-8 rounded-lg shadow-md">
+     <h2 class="text-3xl font-bold mb-8 text-center">
+      صفحة الدعم والمساعدة
+     </h2>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       الأسئلة الشائعة
+      </h3>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+       <p>
+        لا توجد أسئلة شائعة.
+       </p>
+      </div>
+     </div>
+     <div class="mb-8">
+      <h3 class="text-xl font-semibold mb-4">
+       نموذج الاتصال
+      </h3>
+      <form>
+       <div class="mb-4">
+       <footer class="bg-gray-800 text-white py-8">
+   <div class="container mx-auto px-4 text-center">
+    <div class="mb-4">
+     <a class="text-2xl font-bold text-blue-400" href="#">
+      JobMatch
+     </a>
+    </div>
+    <div class="space-x-4 mb-4">
+     <a class="hover:text-blue-400" href="#">
+      سياسة الخصوصية
+     </a>
+     <a class="hover:text-blue-400" href="#">
+      شروط الاستخدام
+     </a>
+     <a class="hover:text-blue-400" href="#">
+      الاتصال
+     </a>
+    </div>
+    <div class="space-x-4">
+     <a class="hover:text-blue-400" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="hover:text-blue-400" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="hover:text-blue-400" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
+
